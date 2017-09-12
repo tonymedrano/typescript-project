@@ -1,0 +1,25 @@
+{
+  "name": "typescript-project",
+  "version": "1.0.0",
+  "description": "creating a typescript environment for beginners.",
+  "main": "main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonymedrano/typescript-project.git"
+  },
+  "keywords": [
+    "typescript",
+    "javascript",
+    "es2015",
+    "node"
+  ],
+  "author": "Tony Medrano <info@tonymedrano.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tonymedrano/typescript-project/issues"
+  },
+  "homepage": "https://github.com/tonymedrano/typescript-project#readme"
+}

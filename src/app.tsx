@@ -1,19 +1,15 @@
-class App {
-    greeting: string;
-    constructor(message: string) {
-        this.greeting = message;
+export class God {
+    name:string
+    constructor(name:any) {
+        this.name = name
     }
     run() {
-        return "Hello, " + this.greeting;
+        let div = document.createElement("div");
+        let content = document.createTextNode(`Running ${this.name}...`);
+        div.appendChild(content);
+        document.body.appendChild(div)
     }
 }
 
-let app = new App("world");
-
-let button = document.createElement('button');
-button.textContent = "Say Hello";
-button.onclick = function() {
-    alert(app.run());
-}
-
-document.body.appendChild(button);
+let app = new God("God")
+app.run()

@@ -65,24 +65,26 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-var App = (function () {
-    function App(message) {
-        this.greeting = message;
+"use strict";
+
+exports.__esModule = true;
+var God = (function () {
+    function God(name) {
+        this.name = name;
     }
-    App.prototype.run = function () {
-        return "Hello, " + this.greeting;
+    God.prototype.run = function () {
+        var div = document.createElement("div");
+        var content = document.createTextNode("Running " + this.name + "...");
+        div.appendChild(content);
+        document.body.appendChild(div);
     };
-    return App;
+    return God;
 }());
-var app = new App("world");
-var button = document.createElement('button');
-button.textContent = "Say Hello";
-button.onclick = function () {
-    alert(app.run());
-};
-document.body.appendChild(button);
+exports.God = God;
+var app = new God("God");
+app.run();
 
 
 /***/ })
